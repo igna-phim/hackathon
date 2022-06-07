@@ -34,12 +34,11 @@ a {
 }
 
 nav {
-  margin: 10px auto 10px;
+  margin: auto 10px;
   padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #ddd
 }
 
 nav h3 {
@@ -54,7 +53,6 @@ footer {
   display: block;
   text-align: center;
   padding: 30px 0;
-  margin-top: 60px;
   border-top: 1px solid #ddd
 }
 

@@ -10,7 +10,7 @@ export default function Home() {
             <div className="">
               <div className="">
                 <Quottation />
-                <p className=" text-base md:text-md leading-relaxed m-5">
+                <p className="text-3xl font-semibold md:text-md leading-relaxed m-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris enim arcu, mattis a metus ac, posuere interdum nulla. Ut erat orci, euismod vel bibendum id, blandit eu nisl. Vestibulum rhoncus semper nunc id commodo. In et lobortis dui, in dignissim lacus. Nullam condimentum at felis sit amet aliquet.</p>
                 <div className="flex flex-row-reverse">
                   <Quottation2 />

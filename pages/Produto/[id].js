@@ -17,18 +17,24 @@ export default function ProdutoIndividual({ id }) {
 
 
     return (
-        <div className="flex flex-col justify-center items-center">
-            <div style={{
-                backgroundImage: `url(${produtoIndividual.imagem})`, height: "10vh", width: "10vw",
+        <div className="flex flex-row justify-evenly items-center ">
+            <div className="justify-self-auto" style={{
+                backgroundImage: `url(${produtoIndividual.imagem})`, height: "80vh", width: "800px",
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}>
             </div>
-            <div>
-                <h1>nome: {produtoIndividual.name}</h1>
-                <h3>descricao: {produtoIndividual.description}</h3>
-                <h3>preco: {produtoIndividual.price}</h3>
+            <div className="flex flex-col ">
+                <div>
+                    <h1 className="m-5 text-4xl font-bold"> {produtoIndividual.name}</h1>
+                </div>
+                <div>
+                    <h3>descricao: {produtoIndividual.description}</h3>
+                </div>
+                <div>
+                    <h3>preco: {produtoIndividual.price}</h3>
+                </div>
             </div>
             <Link href="/produtos">
                 <button>Anterior</button>
