@@ -1,11 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @media screen and (min-width: 1024px) {
   body {
     min-height: 100vh;
   }
+}
+
+@font-face {
+  font-family: "fontProjeto";
+  src: url(/public/Southam_Demo.otf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+
 }
 
 
@@ -25,20 +34,20 @@ a {
 }
 
 nav {
-  margin: 10px auto 80px;
+  margin: 10px auto 10px;
   padding: 10px 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #ddd
+}
+
+nav h3 {
+  font-family: "fontProjeto";
 }
 
 nav a {
   margin-left: 12px;
-}
-
-nav h3 {
-  margin-right: auto;
 }
 
 footer {
