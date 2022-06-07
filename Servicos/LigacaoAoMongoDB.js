@@ -5,10 +5,10 @@ const BASE_DE_DADOS = "hack304"
 const COLECAO_PRODUTOS = "Produtos"
 const COLECAO_CARINHO = "Carinho"
 
-async function getMongoCollection() {
-    const client = await connectToMongo()
-    return client.db(BASE_DE_DADOS).collection(COLECAO_PRODUTOS)
-  }
+async function getMongoCollection(dbName, colName) {
+  const client = await connectToMongo()
+  return client.db(dbName).collection(colName)
+}
 let client
 async function connectToMongo() {
   try {
@@ -21,7 +21,7 @@ async function connectToMongo() {
   }
 }
 
-export default getMongoCollection 
+export default getMongoCollection
 
 
 
