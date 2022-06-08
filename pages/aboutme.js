@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div className="flex flex-row justify-around">
             <div>
                 <p>
-                    Fabio Canavaro (Lisboa, 1990) uso o nome artistico, trashsure, nome resultado da junção da palavra inglesa trash(lixo) e sure(advém da palavra tesouro).
+                Fabio Canavaro (Lisbon, 1990) I use the artistic name trashsure, a name resulting from the junction of the english words trash and treasure.
                 </p>
             </div>
             <div>
@@ -14,29 +14,34 @@ export default function AboutMe() {
         </div>
         <br></br>
         <div className="flex flex-row justify-around">
-            A minha juventude teve lugar entre as horas passadas no estúdio do meu avô constantino,
-            que tinha uma paixão incessante por aguarelas e óleos e retratava paisagens e cenas típicas da cidade,
-            e as aventuras em torno do graffiti ilegal no submundo da cidade de Lisboa.
+        My youth took place between the hours spent in the studio of my grandfather Constantino,
+        who had an incessant passion for watercolors and oils and used to portray landscapes and typical scenes of the city, 
+        and the adventures around illegal graffiti in Lisbon's underworld.
         </div>
         <br></br>
         <div className="flex flex-row justify-around">
-            Licenciei em escutura pela Faculdade de Belas Artes de lisboa,
-            escolhi esta cidade para viver onde, desde 2008, trabalho no meu atelier como artista plastico.
-            tenho trabalhos expostos no MAAT(museu arquitectura, arte e tecnologia) na fundação caluste gulbenkian.
+        I graduated in sculpture from the Faculty of Fine Arts of Lisbon, in 2008 I chose to live in this city, I work in my atelier as an artist. I have exhibited works in MAAT(museum architecture, art and technology) in the Caluste Gulbenkian Foundation.
         </div>
         <br></br>
         <div className="flex flex-row justify-around">
-            Em 2012, depois do prémio do POPs da Fundação de Serralves (Projectos Originais  Portugueses)
-            e de passar 2 anos pela Incubadora de Indústrias Criativas INSerralves,
-            comecei a assumir uma vertente menos comercial,
-            focando-me em projectos onde exploro um universo dedicado a escultura,
-            reinterpretando histórias e materiais, devolvendo emoções em forma de objectos ou instalações em espaço público.
+        In 2012, after winning the Serralves Foundation POPs award (Portuguese Original Projects) and spending 2 years at the INSerralves Creative Industries Incubator, I started to take on a less commercial side, focusing on projects where I explore a universe dedicated to sculpture, reinterpreting stories and materials, returning emotions in the form of objects or installations in public space.
         </div>
         <br></br>
         <div className="flex flex-row justify-around mb-5">
-            É neste processo de criação que a sustentabilidade ambiental ganha um forte relevo no meu trabalho,
-            onde desperdícios de indústrias, empresas ou museus são transformados em novas peças.
-            Por outro lado, a manualidade e rigor da produção estão aliadas a uma forte componente social.
+        It is in this process of creation that environmental sustainability gains a strong prominence in my work, where waste from industries, companies or museums is transformed into new  art pieces. On the other hand, the handcraft and rigor of the production are allied to a strong social component.
         </div>
     </div>)
 }
+
+// Fabio Canavaro (Lisbon, 1990) I use the artistic name trashsure, a name resulting from the junction of the english word trash and treasure.
+
+
+// My youth took place between the hours spent in the studio of my grandfather Constantino, who had an incessant passion for watercolors and oils and used to portray landscapes and typical scenes of the city, and the adventures around illegal graffiti in Lisbon's underworld.
+
+// I graduated in sculpture from the Faculty of Fine Arts of Lisbon, in 2008 i chose to live in this city, i work in my atelier as an artist. I have exhibited works in MAAT(museum architecture, art and technology) in the Caluste Gulbenkian Foundation.
+
+// In 2012, after winning the Serralves Foundation POPs award (Portuguese Original Projects) and spending 2 years at the INSerralves Creative Industries Incubator, I started to take on a less commercial side, focusing on projects where I explore a universe dedicated to sculpture, reinterpreting stories and materials, returning emotions in the form of objects or installations in public space.
+
+// It is in this process of creation that environmental sustainability gains a strong prominence in my work, where waste from industries, companies or museums is transformed into new  art pieces. On the other hand, the handcraft and rigor of the production are allied to a strong social component.
+
+// Translated with www.DeepL.com/Translator (free version)

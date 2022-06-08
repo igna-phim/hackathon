@@ -58,7 +58,7 @@ export default function ProdutoIndividual({ total, setTotal }) {
                                     <h3><p className=" inline">Price:</p> <span className="font-bold">{e.price} $</span></h3>
                                 </div>
                                 <div className=" ml-5 ">
-                                    <button className="btn-fade-out-remove bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2 transition-all duration-500 ease-in-out" onClick={() => { removerproduto(e._id), setTotal((prev) => prev - e.price) }}>Remover</button>
+                                    <button className="btn-fade-out-remove bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2 transition-all duration-500 ease-in-out" onClick={() => { removerproduto(e._id), setTotal((prev) => Math.round(prev - e.price)) }}>Remover</button>
                                 </div>
                             </div>
                         </div>

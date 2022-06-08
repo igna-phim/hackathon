@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css'
 function MyApp({ Component, pageProps  }) {
   const [type,setType] = useState("")
   const [total,setTotal] = useState(0)
-  // const [alerta1,setAlerata1] = useState(false)
+  const [alerta1,setAlerata1] = useState(false)
   return (
     <Layout>
       <Component {...pageProps}
@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps  }) {
       setType={setType}
       total={total}
       setTotal={setTotal}
-      // setAlerata1={setAlerata1}
-      // alerta1={alerta1}
+      setAlerata1={setAlerata1}
+      alerta1={alerta1}
       />
     </Layout>
   )

@@ -47,6 +47,7 @@ export default function Home({ setType }) {
 
         </div>
       </div>
+      
     </div>
 
   )
