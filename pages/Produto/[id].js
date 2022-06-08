@@ -4,13 +4,17 @@ import { useEffect, useState } from "react";
 export default function ProdutoIndividual({ id }) {
     const [produtoIndividual, setProdutoIndividual] = useState({})
     const [carrinho, setCarrinho] = useState({})
+    
     async function fetchProduto() {
         const resultado = await fetch(`/api/ProdutoIndividual/${id}`)
+        console.log(resultado)
         const json = await resultado.json()
+        
         setProdutoIndividual(json)
     }
+console.log(produtoIndividual)
 
-    console.log(produtoIndividual)
+    
 
     useEffect(() => {
         fetchProduto()
@@ -29,11 +33,11 @@ export default function ProdutoIndividual({ id }) {
         const mesagem = await resultado.json()
         setCarrinho(mesagem)
     }
-    console.log(carrinho)
 
+    
     return (
-        <div className="flex flex-row justify-evenly items-center ">
-            <div className="justify-self-auto " style={{
+        <div className="flex flex-row justify-evenly items-center m-3">
+            <div className="justify-self-auto shadow-lg" style={{
                 backgroundImage: `url(${produtoIndividual.imagem})`, height: "80vh", width: "800px",
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',

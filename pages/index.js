@@ -32,7 +32,7 @@ export default function Home({ setType }) {
         </div>
       </div>
       <div className="flex flex-row justify-around">
-        <div onClick={() => { setType("madeira"), verProdutosPorCategoria() }} className="transition ease-in-out delay-150 m-10 flex justify-center items-center  border-black h-[80vh] w-[25vw] hover:-translate-y-1 hover:scale-105 hover:cursor-pointer bg-no-repeat bg-cover bg-center bg-wood ">
+        <div onClick={() => { setType("Madeira"), verProdutosPorCategoria() }} className="transition ease-in-out delay-150 m-10 flex justify-center items-center  border-black h-[80vh] w-[25vw] hover:-translate-y-1 hover:scale-105 hover:cursor-pointer bg-no-repeat bg-cover bg-center bg-wood ">
           
         </div>
         <div onClick={() => { setType("cartao"), verProdutosPorCategoria() }} className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover:cursor-pointer m-10 flex justify-center items-center  border-black h-[80vh] w-[25vw] bg-no-repeat bg-cover bg-center bg-cardboard ">

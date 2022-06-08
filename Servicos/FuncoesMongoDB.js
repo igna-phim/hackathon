@@ -39,6 +39,13 @@ export async function criarCarrinho({ _id, ...data }) {
   console.log(result.insertedId)
   return result.insertedId
 }
+export async function RemoverProduto(id) {
+  const collection = await getMongoCollection(BASE_DE_DADOS, COLECAO_CARINHO)
+  const result = await collection.deleteOne({_id: ObjectId(id)})
+  console.log(result)
+  return result.deletedCount
+  
+}
 
 
 

@@ -6,9 +6,9 @@ const COLECAO_PRODUTOS = "Produtos"
 const COLECAO_CARINHO = "Carinho"
 
 async function getMongoCollection() {
-    const client = await connectToMongo()
-    return client.db(BASE_DE_DADOS).collection(COLECAO_PRODUTOS)
-  }
+  const client = await connectToMongo()
+  return client.db(BASE_DE_DADOS).collection(COLECAO_PRODUTOS)
+}
 let client
 async function connectToMongo() {
   try {
@@ -21,34 +21,170 @@ async function connectToMongo() {
   }
 }
 
-export default getMongoCollection 
+export default getMongoCollection
 
 
- async function populate_Items() {
-     const collection = await getMongoCollection("Hackathon","Produtos")
-     collection.insertMany(
-         [
-             new Item("plastico1", 4.99,"descricao1","plastico","/plastico1.jpg"),
-             new Item("madeira1", 7.99,"descricao2","madeira","/madeira1.jpg"),
-             new Item("madeira2", 2.99,"descricao3","madeira","/madeira2.jpg"),
-             new Item("plastico2", 1.99,"descricao4","plastico","/plastico2.jpg"),
-             new Item("cartao1", 8.99,"descricao5","cartao","/cartao1.jpg"),
-             new Item("cartao2", 3.99,"descricao6","cartao","/cartao2.jpg")
-         ]
-     )
- }
+async function populate_Items() {
+  const collection = await getMongoCollection("Hackathon", "Produtos")
+  collection.insertMany(
+    [{
+      "name": "Cadeira",
+      "price": 129.99 ,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "40/90cm",
+      "imagem": "/cadeira.jpg"
+    },
+    {
+      "name": "puff",
+      "price": 469.99,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "90/110cm",
+      "imagem": "/puff.jpg"
+    },
+    {
+      "name": "Ole",
+      "price": 339.99 ,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "50/115cm",
+      "imagem": "/ole.jpg"
+    },
+    {
+      "name": "rhino",
+      "price": 299.99 ,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "90/110cm",
+      "imagem": "/rhino.jpg"
+    },
+    {
+      "name": "FormasGeometricas",
+      "price": 129.99,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "60/80cm",
+      "imagem": "/geometriaDasFormas.webp"
+    },
+    {
+      "name": "animais",
+      "price": 209.99,
+      "description": "obra executado com cartão recolhido do lixo e doações  ",
+      "type": "cartao",
+      "dimention": "20/60cm",
+      "imagem": "/animais.jpg"
 
- class Item {
-     constructor(name, price, description, type, imagem) {
-         this.name = name,
-         this.price = price,
-         this.description = description,
-         this.type = type,
-         this.imagem = imagem
-     }
- }
+    },
+    {
+      "name": "Cadeeiro",
+      "price": 129.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "20/40cm",
+      "imagem": "/candeeiro.jpg"
+    },
+    {
+      "name": "Cavalo Marinho",
+      "price": 323.99,
+      "description": "obra executado com plastico recolhido do lixo e doações  ",
+      "type": "plastico",
+      "dimention": "40/80cm",
+      "imagem": "/cavaloMarinho.jpg"
+    },
+    {
+      "name": "Peixe",
+      "price": 226.99,
+      "description": "obra executado com plastico recolhido  do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "20/30cm",
+      "imagem": "/peixe.jpg"
+    },
+    {
+      "name": "Iulian",
+      "price":99.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "30/50cm",
+      "imagem": "/iulian.jpg"
+    },
+    {
+      "name": "Fenix",
+      "price": 706.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "130/190cm",
+      "imagem": "/fenix.jpg"
+    },
+    {
+      "name": "Pantera",
+      "price": 620.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "90/140cm",
+      "imagem": "/pantera.jpg"
+    },
+    {
+      "name": "Touro",
+      "price": 320.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "80/110cm",
+      "imagem": "/touro.jpg"
+    },
+    {
+      "name": "Tubarão",
+      "price": 920.99,
+      "description": "obra executado com plastico recolhido do lixo e doações   ",
+      "type": "plastico",
+      "dimention": "70/170cm",
+      "imagem": "/tubarao.jpg"
+    },
+    {
+      "name": "Bonsai",
+      "price": 100.99,
+      "description": "obra executado com madeira recolhido do lixo ao de casa  ",
+      "type": "Madeira",
+      "dimention": "80/110cm",
+      "imagem": "/bonsai.jpg"
+    },
+    {
+      "name": "Natureza Morta",
+      "price": 820.99,
+      "description": "obra executado com madeira recolhido do lixo ao de casa  ",
+      "type": "Madeira",
+      "dimention": "80/140cm",
+      "imagem": "/naturezaMorta.jpg"
+    },
+    {
+      "name": "Coruja",
+      "price": 990.99,
+      "description": "obra executado com madeira recolhido do lixo ao de casa  ",
+      "type": "Madeira",
+      "dimention": "40/70cm",
+      "imagem": "/coruja.jpg"
+    },
+    {
+      "name": "Três Aneis",
+      "price": 340.99,
+      "description": "obra executado com madeira recolhido do lixo ao de casa  ",
+      "type": "Madeira",
+      "dimention": "110/220cm",
+      "imagem": "/tresAneis.jpg"
+    },
+    {
+      "name": "Bau",
+      "price": 190.99,
+      "description": "obra executado com madeira recolhido do lixo ao de casa  ",
+      "type": "Madeira",
+      "dimention": "15/40cm",
+      "imagem": "/bau.jpg"
+    }
+    ]
+  )
+}
 
- populate_Items()
+populate_Items()
 
 
 
