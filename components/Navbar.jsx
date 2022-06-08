@@ -1,14 +1,33 @@
 // components/Header.tsx
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
 export default function Navbar() {
+    const [todosOsProdutos, setTodosOsProdutos] = useState([])
+
+
+    async function MostrarTodosOsProdutosDoCarrinho() {
+        const resultado = await fetch(`/api/ObterOCarrinho`)
+        const json = await resultado.json()
+        setTodosOsProdutos(json)
+    }
+    useEffect(() => {
+        MostrarTodosOsProdutosDoCarrinho()
+    }, [todosOsProdutos])
+
     return (
-        <nav className="px-5">
+        <nav className="">
             <Link
-            href="/">
+                href="/">
                 <img className="hover:cursor-pointer" src="logoFinal.png" alt="Logo" width="150px" />
             </Link>
-            <h3></h3>
+
+            {todosOsProdutos.length === 0
+                ? null
+                : <Link href="/Carrinho">
+                    <img src="/IconCarrinho.png" className="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer fixed w-9 right-5" />
+                </Link>
+            }
+
 
             {/* <Link href="/">
                 <a className="hover:font-bold hover:text-sm">

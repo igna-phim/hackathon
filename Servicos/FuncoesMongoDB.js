@@ -18,6 +18,16 @@ export async function ObterTodosOsProdutos() {
   const result = await collection.find().toArray()
   return result
 }
+export async function ObterTodosOsProdutosPorCategoria(madeira) {
+  const collection = await getMongoCollection(BASE_DE_DADOS, COLECAO_PRODUTOS)
+  const result = await collection.find({type:madeira}).toArray()
+  return result
+}
+export async function ObterOcarrinho() {
+  const collection = await getMongoCollection(BASE_DE_DADOS, COLECAO_CARINHO)
+  const result = await collection.find().toArray()
+  return result
+}
 export async function ObterUmProduto(id) {
   const collection = await getMongoCollection(BASE_DE_DADOS, COLECAO_PRODUTOS)
   const result = await collection.findOne({ _id: ObjectId(id) })

@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         "nature-light": "url('/nature-light.jpg')",
         "bottle": "url('/images/plastic-bottle.jpg')",
+        "cardboard": "url('/CardBoard.jpg')",
+        "plastic": "url('/Plastic.png')",
+        "wood": "url('/Wood.png')"
       },
     },
   },
