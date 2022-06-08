@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 export default function AboutMe() {
-    return (<div className="flex flex-col justify-around px-24 mt-5 text-xl">
+    return (<div className="flex flex-col justify-around px-72 mt-5 text-xl">
+        <div className="flex justify-center items-center h-[100px]"></div>
         <div className="flex flex-row justify-around">
             <div>
                 <p>
-                    Fabio Canavaro (Lisboa, 1990) uso o nome artistico, trashsure,
-                    nome resultado da junção da palavra inglesa trash(lixo) e sure(advém da palavra tesouro).
+                    Fabio Canavaro (Lisboa, 1990) uso o nome artistico, trashsure, nome resultado da junção da palavra inglesa trash(lixo) e sure(advém da palavra tesouro).
                 </p>
             </div>
             <div>

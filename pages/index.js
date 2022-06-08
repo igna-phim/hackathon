@@ -29,8 +29,8 @@ export default function Home({ setType }) {
             </div>
           </div>
           <div className="p-5 m-5 flex flex-row">
-            <a href="/aboutme" className=" border-solid border-amber-400 bg-amber-400 rounded-full border-2 text-center p-2 pl-4 pr-4 text-white hover:bg-transparent text-2xl hover:font-bold">Get to know me!</a>
-            <a href="/produtos" className="ml-4 border-solid border-amber-400 bg-amber-400 rounded-full border-2 text-center p-2 pl-4 pr-4 text-white hover:bg-transparent text-2xl hover:font-bold">My Art</a>
+            <a href="/aboutme" className=" border-solid border-amber-400 bg-amber-400 rounded-full border-2 text-center p-2 pl-4 pr-4 text-white hover:bg-transparent text-2xl font-bold hover:font-bold mr-10">Get to know me!</a>
+            <a href="/produtos" className="ml-4 border-solid border-amber-400 bg-amber-400 rounded-full border-2 text-center p-2 pl-4 pr-4 text-white hover:bg-transparent text-2xl font-bold hover:font-bold">My Art</a>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center my-10">
