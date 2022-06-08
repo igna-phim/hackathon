@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function AboutMe() {
-    return (<div className="flex flex-col justify-around px-24 mt-5">
+    return (<div className="flex flex-col justify-around px-24 mt-5 text-xl">
         <div className="flex flex-row justify-around">
             <div>
                 <p>

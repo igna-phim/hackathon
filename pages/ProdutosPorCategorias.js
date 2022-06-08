@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router'
 import Link from "next/link"
-export default function Produtos({ type, setType,setTotal }) {
+export default function Produtos({ type, setType, setTotal }) {
     const [todosOsProdutos, setTodosOsProdutos] = useState([])
     const router = useRouter()
 
@@ -29,7 +29,7 @@ export default function Produtos({ type, setType,setTotal }) {
                     <button className="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer p-2 border-b-2 border-amber-400" onClick={() => { setType("Madeira") }}>Wood</button>
                     <button className="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer p-2 border-b-2 border-amber-400" onClick={() => { setType("cartao") }}>Cardboard</button>
                     <Link href="/produtos">
-                    <button className="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer p-2 border-b-2 border-amber-400">Todos os Produtos</button>
+                        <button className="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer p-2 border-b-2 border-amber-400">Show All</button>
                     </Link>
                 </div>
                 <div>
@@ -42,7 +42,7 @@ export default function Produtos({ type, setType,setTotal }) {
                                     backgroundPosition: 'center',
                                     backgroundSize: 'cover',
                                     backgroundRepeat: 'no-repeat'
-                                }} onClick={() => {verProduto(e._id),setTotal((prev)=> prev + e.price)}}>
+                                }} onClick={() => { verProduto(e._id), setTotal((prev) => prev + e.price) }}>
                                 </div>
                                 {/* <div>
                                     <h1>nome: {e.name}</h1>
